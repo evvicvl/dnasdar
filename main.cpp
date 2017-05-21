@@ -82,13 +82,13 @@ int main()
         switch(s)
         {
         case GAME_STATE::GAME_MORE:
-            std::cout << "Less\n";
+            std::cout << "Less.\n";
             break;
         case GAME_STATE::GAME_LESS:
-            std::cout << "More\n";
+            std::cout << "More.\n";
             break;
         case GAME_STATE::GAME_TERMINATED:
-            std::cout << "Done\n";
+            std::cout << "Done.\n";
             break;
         }
     }
