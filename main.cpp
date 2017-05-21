@@ -53,9 +53,10 @@ GAME_STATE Game::move(int m)
     if(m == _maxint)
     {
         _gamestate = GAME_STATE::GAME_TERMINATED;
-        tryed;
+        tryed++;
         return _gamestate;
     }
+    return GAME_STATE::GAME_TERMINATED;
 }
 Game::~Game() {}
 
