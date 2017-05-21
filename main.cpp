@@ -31,6 +31,11 @@ Game::Game(int maxint)
         _maxint = 0;
         return;
     }
+    if(maxint > 65535)
+    {
+        _maxint = 65535;
+        return;
+    }
     srand(time(NULL));
     _maxint = rand() % maxint;
 }
