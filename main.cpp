@@ -26,6 +26,11 @@ private:
 Game::Game()            { ; }
 Game::Game(int maxint)
 {
+    if(maxint < 0)
+    {
+        _maxint = 0;
+        return;
+    }
     srand(time(NULL));
     _maxint = rand() % maxint;
 }
