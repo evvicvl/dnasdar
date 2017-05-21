@@ -53,7 +53,7 @@ GAME_STATE Game::move(int m)
     if(m == _maxint)
     {
         _gamestate = GAME_STATE::GAME_TERMINATED;
-        tryed;
+        tryed++;
         return _gamestate;
     }
 }
@@ -76,10 +76,10 @@ int main()
         switch(s)
         {
         case GAME_STATE::GAME_MORE:
-            std::cout << "More.\n";
+            std::cout << "Less\n";
             break;
         case GAME_STATE::GAME_LESS:
-            std::cout << "Less\n";
+            std::cout << "More\n";
             break;
         case GAME_STATE::GAME_TERMINATED:
             std::cout << "Done\n";
