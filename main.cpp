@@ -31,9 +31,9 @@ Game::Game(int maxint)
         _maxint = 0;
         return;
     }
-    if(maxint > 65535)
+    if(maxint > 2048)
     {
-        _maxint = 65535;
+        _maxint = 2048;
         return;
     }
     srand(time(NULL));
